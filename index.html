@@ -1,0 +1,530 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+      
+  * {
+    box-sizing: border-box;
+  }
+  
+body {
+  margin: 0;
+  background-image: url(bg.jpg), url("Bg3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-blend-mode: screen;
+}
+
+.bar {
+  display: grid;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 8px;
+  animation: mybar 300s infinite;
+  animation-play-state: paused;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: after;
+}
+
+.kolom1, 
+.kolom2 {
+  float: left;
+  height: 100vh;
+}
+
+.kolom1 {
+  color: white;
+  margin-top: 40%;
+  padding: 10px;
+  width: 80%;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-size: 100px;
+  position: relative;
+}
+
+#baca1 {
+  animation: mymove 700s infinite;
+  animation-play-state: paused;
+  width: 80%;
+}
+
+#baca2 {
+  animation: mymove 800s infinite;
+  animation-play-state: paused;
+  width: 80%;
+}
+
+#baca3 {
+  animation: mymove 800s infinite;
+  animation-play-state: paused;
+  width: 80%;
+}
+
+.baca{
+  position: absolute;
+}
+
+.kolom2 {
+  width: 20%;
+  left: 79%;
+  position: fixed;
+}
+
+.menubaca, 
+.tombolonoff {
+  height: 50vh;
+  padding: 20px 0 8px;
+}
+
+.tombolbaca, 
+.onoff {
+  margin:  5px;
+}
+
+
+.tombolbaca {
+  background-color: white;
+  height: 40px;
+  width: 60px;
+  color: black;
+  border-radius: 18px;
+  border: 3px solid burlywood;
+  display: ;
+  
+}
+
+.tombolbaca:hover {
+  background-color: burlywood;
+  color: white;
+}
+
+.tombolonoff {
+  position: absolute;
+}
+
+.onoff {
+  background-color: white;
+  height: 50px;
+  width: 50px;
+  color: black;
+  border-radius: 50%;
+  display: none;
+}
+
+#on1, 
+#on2,
+#on3 {
+  border: 3px solid blue;
+}
+
+#on1:hover, 
+#on2:hover, 
+#on3:hover {
+  background-color: blue;
+  color: white;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}
+
+#off1,
+#off2,
+#off3 {
+  border: 3px solid red;
+}
+
+#off1:hover, 
+#off2:hover, 
+#off3:hover {
+  background-color: red;
+  color: white;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 1);
+}
+
+@keyframes mymove {
+from {top: 0px;}
+to {top: -400cm;}
+}
+
+@keyframes mybar {
+from {
+left: -100%;
+background-color: blue;
+}
+to {
+left: 0%;
+background-color: red;
+}
+} 
+
+  </style>
+</head>
+
+<body>
+<div id="bar" class="bar"></div>
+
+<div class="row">
+  <div class="kolom1" id="kolomteks">
+
+    <div class="kolom" id="kolom4teks">
+      <div class="baca" id="eng">
+        belum
+      </div>
+    </div>
+
+    <div class="kolom" id="kolom3teks">
+      <div class="baca" id="baca3">
+        <p>
+          <!--Tab to edit-->
+          <u>
+            <!--Tab to edit-->
+            Rukun Islam ada 5 yaitu 1 syahadat 2 salat 3 zakat 4 puasa 5 Naik Haji ke Baitullah bagi yang mampu
+          </u>
+        </p>
+        
+        <p>
+          <!--Tab to edit-->
+          <b>
+            <!--Tab to edit-->
+            nama-nama 25 Nabi yaitu Nabi Adam Nabi Idris Nabi Nuh Nabi Hud Nabi Shaleh Nabi Ibrahim Nabi Luth Nabi Ismail nabi Ishaq Nabi Yakub Nabi Yusuf Nabi Ayub Nabi Syu'aib Nabi Harun Nabi Musa Nabi Ilyasa Nabi Zulkifli Nabi Daud Nabi Sulaiman Nabi Ilyas Nabi Yunus Nabi Zakaria Nabi Yahya Nabi Isa Nabi Muhammad Shallallahu Alaihi Wasallam
+          </b>
+        </p>
+
+        <p>
+          <!--Tab to edit-->
+          <i>
+            <!--Tab to edit-->
+            Rukun iman ada 6 yaitu 1 iman kepada Allah 2 iman kepada malaikat Allah 3 iman kepada rasul Allah 4 iman kepada kitab Allah 5 iman kepada hari akhir 6 iman kepada Qada dan Qadar
+          </i>
+        </p>
+        
+        <p>
+          <!--Tab to edit-->
+          <b>
+            <!--Tab to edit-->
+            ada 4 nama-nama kitab yang diturunkan kepada nabi yaitu 1 kitab Taurat diturunkan kepada Nabi Musa 2 Kitab Injil diturunkan kepada Nabi Isa 3 Kitab Zabur diturunkan kepada Nabi Daud 4 kitab Alquran diturunkan kepada Nabi Muhammad
+          </b>
+        </p>
+        
+        <p>
+          <!--Tab to edit-->
+          <i>
+            <!--Tab to edit-->
+            4 nama Khulafaur Rasyidin yaitu 1 Abu Bakar Siddiq 2 Utsman bin Affan 3 Umar Bin Khattab 4 Ali Bin Abi Thalib
+          </i>
+        </p>
+        
+        <p>
+          <!--Tab to edit-->
+          <b>
+            <!--Tab to edit-->
+            nama-nama presiden yang pernah menjabat di Indonesia yaitu 1 Soekarno 2 Soeharto 3 BJ Habibie 4 Abdurrahman Wahid 5 Megawati 6 Susilo Bambang Yudhoyono 7 Joko Widodo
+          </b>
+        </p>
+
+        <p>
+          <!--Tab to edit-->
+          <u>
+            <!--Tab to edit-->
+            Pancasila 1 Ketuhanan Yang Maha Esa lambangnya Bintang 2 Kemanusiaan yang adil dan beradab lambangnya rantai 3 Persatuan Indonesia lambangnya pohon beringin 4 Kerakyatan yang dipimpin oleh hikmah kebijaksanaan dalam permusyawaratan perwakilan lambangnya kepala banteng 5 keadilan sosial bagi seluruh rakyat Indonesia lambangnya padi dan kapas
+          </u>
+        </p>
+        
+        <p>
+          <!--Tab to edit-->
+          <i>
+            <!--Tab to edit-->
+            nama-nama planet yaitu 1 Merkurius 2 Venus 3 bumi 4 Mars 5 Jupiter 6 Saturnus 7 Uranus 8 Neptunus
+          </i>
+        </p>
+      </div>
+    </div>
+  
+    <div class="kolom" id="kolom2teks">
+      <div class="baca" id="baca2">
+        <p>
+          <!--Tab to edit-->
+          <b>
+          Man Min mun bandara tanpa janji antara nanti panci Panda iman Tuhan kesehatan tanduk Sunda bantin ganti ikan</b>
+        </p>
+
+        <p>
+          <!--Tab to edit-->
+          <u>
+            Bar bir bur telur atur sabar bakar pasir pikir mahir kikir arti
+          </u>
+        </p>
+
+        <p>
+          <!--Tab to edit-->
+          <i>
+          lah Lih lu salah telah lebah sepuluh Saleh pilih letih</i>
+        </p>
+
+        <p>
+          <!--Tab to edit-->
+          <u>
+            nga ngi ngu
+          sengaja mengalah mengira mengikuti mengukir mengutamakan</u>
+        </p>
+
+        <p>
+          <!--Tab to edit-->
+          <i>
+          Lang ling lung gelang langkah saling maling untung kalung</i>
+        </p>
+
+        <p>
+          <!--Tab to edit-->
+          <b>
+            nya nyi nyu
+            hanya punya tanya nyanyi sunyi bunyi nyuruh penyu nyuci
+          </b>
+        </p>
+      </div>
+    </div>
+  
+    <div class="kolom" id="kolom1teks">
+      <div class="baca" id="baca1">
+        <p>
+          aa baba aba aa caca aca aba aca baca aa dada ada baca ada dada bada ada badak ada aba-aba ada aba-aba dada caca aba-aba baca ada baca asa ada Sasa baca sasa bahasa sada ada baca dada Sasa dasa ada dada Sasa baca ada basa dasa baca asa sama ama ada asa sama ada masa baca-baca ada masa sama ada masa baca saya Sasa Yaya saya mama Maya Yaya saya sama Maya ada daya sama Maya sama saya baca sama sama daya baca sama sisi Ida Yadi Maya di sisi Ida ada Maya Si Maya ada di sisi si Yadi bisa baca bisa dibaca Maya ada bayi di sisi bibi aku bisa baca buku bibi Yadi ada di Bima bibi Maya ada sama saya sama Ida ada di Bima ada cicak di sisi saya ada dasi di dada isa di sisi Adi ada cicak Ida muda Ibu Bayu ada madu ada ubi cucu Ibu ayu ayu Ibu Musa cuci-cuci sisa susu bisa basi Ida ayu cucu bibi sumi Sumi nama bibi saya bibi Sumi ada di sini di sisi bibi ada Bayu nama bayi ini Nani Nani aku bisa baca aku suka baca buku di mana ada buku aku baca buku Nina ada di sana Buku Nani ada di sini kami sama-sama baca buku di sana buku Maya dibaca di mana ada padi ada nasi di sini ada sapi di sana ada Kuku di padi ada kupu di kayu ada paku bayi suka susu aku suka nasi Banu suka madu bibi suka ubi di bukumu ku baca namamu Budi cicak Nani sama-sama suka papa ya di sana ada lima sapu lidi dulu Ibu lama di Bima kini ibu ada di Bali ada luka di kaki kudaku kudamu ada di mana kudaku ada di kali bila lupa lalu aku baca bila dibaca lama-lama bisa pula di sana lima buku tapi dibaca kata ibu tadi ada tamu tamu itu suka baca buku tiba-tiba Yati ada di sisiku kami sama-sama baca buku Bila ada kaca maka Ibu bisa baca di bulu itu ada kutu di laci ada tali pita di tata di sana buku itu dibaca Maya pula ada rusak lari diburu ada kuda lari dicari mari kita buru-buru rusa itu Rabu lalu ibu ada di Bali lusa saya ada di Madura daripada ubi Saya suka nasi kita bicara pada ibu manakala di Surabaya baru supaya maju Suka rasa hatiku bila ada cahaya matahari ini matahari ada di utara lusa hari raya tiba rasa hati tiba pada si papa hati-hati di situ ada duri dahulu ibu di Surabaya kini ibu di Minahasa bila di sana ada cahaya matahari maka buku kita bisa dibaca kita suka baca buku supaya maju jujur suka baca buku buku baru di bumi ada biji apa saja di sini bisa ditanami padi di sana bisa ditanami kayu jati saja Juni lalu ibu ada di Manila Juni ini Ibu ada di sini Jika buruk bisa rugi jika hati-hati bisa laba bayi itu dijaga Ibu gigi bayi itu ada tiga kita lari-lari di pagi hari di kiri garasi ada gapura gaya lama di utara gapura ada tiga tugu batu bibi suka irama lagu lama ibu suka irama lagu apa saja tapi aku suka irama lagu baru Sita juga suka irama lagu baru ini ada gula-gula dari bibi Mari kita bagi-bagi tiga di sana bisa ditanami palawija di sini bisa ditanami sawi saja saya bisa bicara Bahasa Jawa Wati bisa bicara bahasa Madura cita-cita Wati jadi guru kini Wati pura-pura jadi guru kita ada tiga buku dibawa Wati dahulu ibu saya juga jadi guru bila hari raya tiba kita wisata meja tape jahe kate Desa rela Mari kita baca kata-kata ini Maya suka sate sapi Yati suka sate madura Rita suka apa Rita suka mete di sini ada aneka rupa Ada apa di desa sana di desa sana ada aneka tari
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+  
+  <div class="kolom2" id="kolom2menu">
+    <div class="menubaca" id="menubaca">
+      <button id="tombolbaca1" class="tombolbaca" type="submit" onclick="mybaca1()">
+        Baca 1</button>
+      <button id="tombolbaca2" class="tombolbaca" type="submit" onclick="mybaca2()">
+        Baca 2</button>
+        <button id="tombolbaca3" class="tombolbaca" type="submit" onclick="mybaca3()">
+          Baca 3</button>
+        <button id="tombolbaca4" class="tombolbaca" type="submit" onclick="myeng()">
+          Eng</button>
+
+    </div>
+
+    <div class="tombolonoff" id="tombolplay1" >
+      <button class="onoff" id="on1" onclick="myPlayFunction()">ON1</button>
+      <button class="onoff" id="off1" onclick="myPauseFunction()">OFF1</button>
+    </div>
+    
+    <div class="tombolonoff" id="tombolplay2">
+      <button class="onoff" id="on2" onclick="myPlayFunction()">ON2</button>
+      <button class="onoff" id="off2" onclick="myPauseFunction()">OFF2</button>
+    </div>
+    
+    <div class="tombolonoff" id="tombolplay3">
+      <button class="onoff" id="on3" onclick="myPlayFunction()">ON3</button>
+      <button class="onoff" id="off3" onclick="myPauseFunction()">OFF3</button>
+    </div>
+  </div>
+
+<script>
+  function myPlayFunction() {
+    document.getElementById("bar").style.animationPlayState = "running";
+
+    document.getElementById("baca1").style.animationPlayState = "running";
+    
+    document.getElementById("baca2").style.animationPlayState = "running";
+    
+    document.getElementById("baca3").style.animationPlayState = "running";
+  }
+
+  function myPauseFunction() {
+    document.getElementById("bar").style.animationPlayState = "paused";
+
+    document.getElementById("baca1").style.animationPlayState = "paused";
+    
+    document.getElementById("baca2").style.animationPlayState = "paused";
+    
+    document.getElementById("baca3").style.animationPlayState = "paused";
+
+    document.getElementById("eng").style.animationPlayState = "paused";
+  }
+  
+  function mybaca1() {
+      var x = document.getElementById("on1");
+      var y = document.getElementById("on2");
+      var z = document.getElementById("on3");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "block";
+      }
+      
+      if (y.style.display === "none") {
+        y.style.display = "none";
+      } else {
+        y.style.display = "none";
+      }
+      
+      if (z.style.display === "none") {
+        z.style.display = "none";
+      } else {
+        z.style.display = "none";
+      }
+      
+      var m = document.getElementById("off1");
+      var n = document.getElementById("off2");
+      var o = document.getElementById("off3");
+      if (m.style.display === "none") {
+        m.style.display = "block";
+      } else {
+        m.style.display = "block";
+      }
+      
+      if (n.style.display === "none") {
+        n.style.display = "none";
+      } else {
+        n.style.display = "none";
+      }
+      
+      if (o.style.display === "none") {
+        o.style.display = "none";
+      } else {
+        o.style.display = "none";
+      }
+    
+    document.getElementById("baca1").style.color = "black";
+    document.getElementById('baca1').style.opacity = '100%';
+    
+    document.getElementById("baca2").style.opacity = "0";
+    document.getElementById("baca3").style.opacity = "0";
+    document.getElementById("eng").style.opacity = "0";
+  }
+  
+  function mybaca2() {
+    var x = document.getElementById("on1");
+      var y = document.getElementById("on2");
+      var z = document.getElementById("on3");
+      if (x.style.display === "none") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "none";
+      }
+      
+      if (z.style.display === "none") {
+        z.style.display = "none";
+      } else {
+        z.style.display = "none";
+      }
+      
+      
+      if (y.style.display === "none") {
+        y.style.display = "block";
+      } else {
+        y.style.display = "block";
+      }
+      
+      var m = document.getElementById("off1");
+      var n = document.getElementById("off2");
+      var o = document.getElementById("off3");
+      if (m.style.display === "none") {
+        m.style.display = "none";
+      } else {
+        m.style.display = "none";
+      }
+      
+      if (o.style.display === "none") {
+        o.style.display = "none";
+      } else {
+        o.style.display = "none";
+      }
+      
+      if (n.style.display === "none") {
+        n.style.display = "block";
+      } else {
+        n.style.display = "block";
+      }
+    
+    document.getElementById("baca2").style.color = "black";
+    document.getElementById('baca2').style.opacity = '100%';
+    
+    document.getElementById("baca1").style.opacity = "0";
+    document.getElementById("baca3").style.opacity = "0";
+    document.getElementById("eng").style.opacity = "0";
+  }
+  
+  function mybaca3() {
+    var x = document.getElementById("on1");
+    var y = document.getElementById("on2");
+    var z = document.getElementById("on3");
+    if (x.style.display === "none") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+    
+    if (z.style.display === "none") {
+      z.style.display = "block";
+    } else {
+      z.style.display = "block";
+    }
+    
+    
+    if (y.style.display === "none") {
+      y.style.display = "none";
+    } else {
+      y.style.display = "none";
+    }
+    
+    var m = document.getElementById("off1");
+    var n = document.getElementById("off2");
+    var o = document.getElementById("off3");
+    if (m.style.display === "none") {
+      m.style.display = "none";
+    } else {
+      m.style.display = "none";
+    }
+    
+    if (o.style.display === "none") {
+      o.style.display = "block";
+    } else {
+      o.style.display = "block";
+    }
+    
+    if (n.style.display === "none") {
+      n.style.display = "none";
+    } else {
+      n.style.display = "none";
+    }
+    
+    document.getElementById("baca3").style.color = "black";
+    document.getElementById('baca3').style.opacity = '100%';
+    
+    document.getElementById("baca1").style.opacity = "0";
+    document.getElementById("baca2").style.opacity = "0";
+    document.getElementById("eng").style.opacity = "0";
+  }
+  
+  function myeng() {
+    
+
+    
+    document.getElementById("eng").style.color = "black";
+    document.getElementById('eng').style.opacity = '100%';
+    
+    document.getElementById("baca1").style.opacity = "0";
+    document.getElementById("baca2").style.opacity = "0";
+    document.getElementById("baca3").style.opacity = "0";
+  }
+</script>
+
+</body>
+
+</html>
